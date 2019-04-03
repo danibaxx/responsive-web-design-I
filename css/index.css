@@ -1,6 +1,3 @@
-
-
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -67,10 +64,11 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-  width: 880px;
+  max-width: 930px;
   /* TB LR */
   margin: 0 auto;
 }
+
 
 /* header */
 
@@ -107,13 +105,13 @@ header .logo {
 /* cta */
 
 .cta .cta-text {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 77px;
-  margin-top: 120px;
-  text-align: center;
-  padding: 0px 75px;
-}
+    display: inline-block;
+    vertical-align: top;
+    font-size: 77px;
+    margin-top: 120px;
+    text-align: center;
+    padding: 0px 75px;
+  }
 
 .cta .cta-text button {
   background: white;
@@ -136,7 +134,7 @@ header .logo {
 }
 
 .main-content {
-  border-top: 1px solid black;
+  border-top: 2px solid black;
   margin-top: 76px;
   padding-top: 39px;
 }
@@ -176,7 +174,7 @@ header .logo {
 
 .contact {
   margin-top: 57px;
-  border-top: 1px solid black;
+  border-top: 2px solid black;
   padding: 39px 10px 0;
 }
 
@@ -188,4 +186,47 @@ footer {
   margin: 32px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* Tablet */
+@media(max-width:800px) {
+
+    .container {
+        background: dodgerblue;
+    }
+  
+  .cta .cta-text {
+    flex-direction: row-reverse;
+  }
+
+    .cta img {
+        display: none;        
+      }
+}
+
+
+
+/* Phone */
+@media(max-width:500px) {
+
+    .container {
+        background: yellowgreen;
+    }
+
+    .cta img {
+        display: none;        
+      }
+
+    header nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    header nav a {
+      font-size: 30px;
+      color: gray;
+      text-decoration: none;
+    }
+  
 }
