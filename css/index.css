@@ -63,170 +63,80 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Styles across both .html docs */
 .container {
-  max-width: 930px;
-  /* TB LR */
-  margin: 0 auto;
+	width: 880px;
+	margin: auto;
 }
 
-
-/* header */
+header {
+	width: 880px;
+}
 
 header nav {
-  display: inline-block;
-  width: 691px;
-  vertical-align: top;
-  margin-top: 35px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 25px;
+	width: 900px;
+	align-items: baseline;
 }
 
 header nav a {
-  margin-right: 65px;
-  font-size: 14px;
-  color: gray;
-  text-decoration: none;
+	font-weight: bold;
+	color: darkgrey;
+	font-size: 16px;
+	text-decoration: none;
 }
 
-header nav a:hover {
-  text-decoration: underline;
+/* Styles for index.html */
+
+.parent1 {
+	display: flex;
+	padding: 35px 0;
+	justify-content: space-between;
+	align-items: center;
 }
 
-header nav a:first-child {
-  margin-left: 0;
+
+h1.index {
+	text-align: center;
+	font-size: 80px;
 }
 
-header nav a:last-child {
-  margin-right: 0;
+.b1 {
+	border: 1px solid black;
+	background: white;
+	padding: 5px 40px;
+	font-size: 16px;
+	margin: 0 0 0 70px;
 }
 
-header .logo {
-  margin-top: 25px;
+.parent2 {
+	display: flex;
+	border-top: 2px solid black;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
-/* cta */
-
-.cta .cta-text {
-    display: inline-block;
-    vertical-align: top;
-    font-size: 77px;
-    margin-top: 120px;
-    text-align: center;
-    padding: 0px 75px;
-  }
-
-.cta .cta-text button {
-  background: white;
-  vertical-align: top;
-  margin-top: 6px;
-  padding: 8px 44px;
-  font-size: 17px;
-  border: 1px solid black;
-  cursor: pointer;
+.child2 {
+	width: 420px;
+	padding: 35px 0;
 }
 
-.cta .cta-text button:hover {
-  background: black;
-  color: white;
+.parent3 {
+	display: flex;
+	justify-content: space-between;
 }
 
-.cta img {
-  display: inline-block;
-  margin-top: 69px;
-}
-
-.main-content {
-  border-top: 2px solid black;
-  margin-top: 76px;
-  padding-top: 39px;
-}
-
-.main-content .top-content {
-  padding: 0 10px;
-}
-
-.main-content .top-content .text-content {
-  width: 410px;
-  display: inline-block;
-  margin-right: 34px;
-}
-
-.main-content .top-content .text-content:last-child {
-  margin-right: 0;
-}
-
-.main-content .middle-img {
-  margin-top: 45px;
-}
-
-.main-content .bottom-content {
-  margin-top: 37px;
-  padding: 0 10px;
-}
-
-.main-content .bottom-content .text-content {
-  width: 275px;
-  display: inline-block;
-  margin-right: 12px;
-}
-
-.main-content .bottom-content .text-content:last-child {
-  margin-right: 0;
+.child3 {
+	padding: 35px 5px 35px 0;
 }
 
 .contact {
-  margin-top: 57px;
-  border-top: 2px solid black;
-  padding: 39px 10px 0;
-}
-
-.contact p {
-  margin: 20px 0;
-}
-
-footer {
-  margin: 32px 0;
-  text-align: center;
-  font-size: 14px;
-}
-
-/* Tablet */
-@media(max-width:800px) {
-
-    .container {
-        background: dodgerblue;
-    }
-  
-  .cta .cta-text {
-    flex-direction: row-reverse;
-  }
-
-    .cta img {
-        display: none;        
-      }
+	border-top: 2px solid black;
+	padding: 30px 0;
 }
 
 
-
-/* Phone */
-@media(max-width:500px) {
-
-    .container {
-        background: yellowgreen;
-    }
-
-    .cta img {
-        display: none;        
-      }
-
-    header nav {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    header nav a {
-      font-size: 30px;
-      color: gray;
-      text-decoration: none;
-    }
-  
-}
