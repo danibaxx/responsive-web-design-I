@@ -152,19 +152,25 @@ h1.index {
     margin: auto;
   }
 
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    width: 100%;;
+    align-items: baseline;
+  }
+
   header nav a:visited {
     text-decoration: none;
     color: navy;
   }
 
-  img.logo {
+  div .logo {
     display: block;
     width: 100%;
     height: auto;
-    border: 1px solid orange;
     margin-left: auto;
     margin-right: auto;
-    order: -1;
   }
 
   div .top-logo {
@@ -184,6 +190,7 @@ h1.index {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 5%;
   }
 
   .parent2 {
@@ -206,8 +213,6 @@ h1.index {
 /* Phone */
 @media(max-width:500px) {
   .container {
-    display: flex;
-    flex-direction: column;
     padding: 0 5%;
   }
 
@@ -216,10 +221,11 @@ h1.index {
     color: navy;
   }
 
-  div .top-logo {
-    order: -1;
-    align-self: center;
-    border-bottom: 1px solid gray;
+  div .logo {
+    margin-top: 1em;
+    padding-bottom: 1em;
+    height: 50px;
+    width: 45%;
   }
 
   .parent1 {
@@ -266,8 +272,10 @@ h1.index {
     width: auto;
   }
 
-  .top-logo {
-    order: 1;
+  div .top-logo {
+    order: -1;
+    border-bottom: 1px solid gray;
+    width: 100%;
   }
 
   .parent3 {
